@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.MainPage"
+             BackgroundColor="#F2DFB5">
+
+
+    <ScrollView>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="30" Padding="100">
+
+            <Image Source="carrito.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+            <Label Text="ShopEasy" 
+           FontSize="40" 
+           FontAttributes="Bold"
+           TextColor="#000"
+           HorizontalOptions="Center"/>
+
+            <Button Text="Iniciar Sesión"
+            FontSize="18"
+            BackgroundColor="#0D7C66"
+            TextColor="White"
+            CornerRadius="10"
+            WidthRequest="200"
+            HeightRequest="50"
+            HorizontalOptions="Center" Clicked="IniciarBtn_Clicked"/>
+
+
+            <Button Text="Registrarse"
+            x:Name="RegistrarBtn"
+            FontSize="18"
+            BackgroundColor="#FFB74D"
+            TextColor="White"
+            CornerRadius="10"
+            WidthRequest="200"
+            HeightRequest="50"
+            HorizontalOptions="Center" Clicked="RegistrarBtn_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.Pages.RegistroView"
+             BackgroundColor="#F2DFB5"
+             Title="RegistroView">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="15" Padding="20">
+
+        <Label Text="Registrate"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#000"
+               HorizontalOptions="Center" />
+
+        <Frame Padding="50" CornerRadius="20" HasShadow="True" BackgroundColor="Beige">
+
+            <StackLayout Orientation="Vertical" Spacing="5">
+                <Label Text="Nombre:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su Nombre" FontSize="18" x:Uid="txtNombre" />
+
+                <Label Text="Correo:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su Correo" FontSize="18" x:Uid="txtCorreo" />
+
+                <Label Text="Contraseña:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su Contraseña" IsPassword="True" FontSize="18" x:Uid="txtContrasena" />
+
+                <Label Text="Telefono:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su Telefono" FontSize="18" x:Uid="txtTelefono" />
+
+            </StackLayout>
+            </Frame>
+
+
+            <Button Text="Registrarse"
+                FontSize="18"
+                BackgroundColor="#125B9A"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="200"
+                HeightRequest="50"
+                HorizontalOptions="Center"/>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.Pages.LoginView"
+             Title="LoginView"
+             BackgroundColor="#F2DFB5">
+
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="15" Padding="20">
+
+        <Frame CornerRadius="10" Padding="20" BackgroundColor="Beige" HasShadow="True">
+            <StackLayout Spacing="10">
+
+                <Label Text="Nombre de Usuario:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su usuario" FontSize="18" x:Name="txtUsuario" />
+
+                <Label Text="Contraseña:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese su contraseña" FontSize="18" IsPassword="True" x:Name="txtContrasena" />
+
+                <Button Text="Aceptar"
+                        FontSize="18"
+                        BackgroundColor="#125B9A"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="BtnAceptar_Clicked" x:Name="BtnAceptar" />
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>
