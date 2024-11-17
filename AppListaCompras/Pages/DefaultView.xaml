@@ -7,44 +7,47 @@
 
     <Grid Padding="0">
         <StackLayout Spacing="0">
-            <StackLayout BackgroundColor="#88C273" Padding="20" Orientation="Vertical">
-                <Label Text="Hola, [Usuario]" 
-                       FontSize="24" 
-                       FontAttributes="Bold" 
-                       TextColor="White" 
-                       HorizontalOptions="Start" />
-            </StackLayout>
 
-            <StackLayout BackgroundColor="#B03052" Padding="10" Orientation="Vertical">
-                <Label Text="Menú Principal" 
-                       FontSize="18" 
-                       FontAttributes="Bold" 
-                       TextColor="White" 
-                       HorizontalOptions="Start" />
-                <HorizontalStackLayout Spacing="20" Padding="10">
-                    <Button Text="Listas" 
-                            BackgroundColor="#D81B60" 
-                            TextColor="White" 
-                            FontAttributes="Bold" 
-                            CornerRadius="10" 
-                            WidthRequest="100" 
-                            Command="{Binding VerListasCommand}" />
-                    <Button Text="Categorías" 
-                            BackgroundColor="#E91E63" 
-                            TextColor="White" 
-                            FontAttributes="Bold" 
-                            CornerRadius="10" 
-                            WidthRequest="100" 
-                            Command="{Binding VerCategoriasCommand}" />
-                    <Button Text="Historial" 
-                            BackgroundColor="#E91E63" 
-                            TextColor="White" 
-                            FontAttributes="Bold" 
-                            CornerRadius="10" 
-                            WidthRequest="100" 
-                            Command="{Binding VerHistorialCommand}" />
-                </HorizontalStackLayout>
-            </StackLayout>
+            <ScrollView>
+                <StackLayout BackgroundColor="#B03052" Padding="10" Orientation="Vertical">
+                    <Label Text="Menú Principal" 
+                           FontSize="18" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           HorizontalOptions="Start" />
+                    <HorizontalStackLayout Spacing="10" Padding="10">
+                        <Button Text="Listas" 
+                                BackgroundColor="#E91E63" 
+                                TextColor="White" 
+                                FontAttributes="Bold" 
+                                CornerRadius="10" 
+                                WidthRequest="70" 
+                                Command="{Binding VerListasCommand}" />
+                        <Button Text="Artículos" 
+                                BackgroundColor="#E91E63" 
+                                TextColor="White" 
+                                FontAttributes="Bold" 
+                                CornerRadius="10" 
+                                WidthRequest="90" 
+                                Command="{Binding VerArticulosCommand}" />
+                        <Button Text="Categorías" 
+                                BackgroundColor="#E91E63" 
+                                TextColor="White" 
+                                FontAttributes="Bold" 
+                                CornerRadius="10" 
+                                WidthRequest="100" 
+                                Command="{Binding VerCategoriasCommand}" />
+                        <Button Text="Historial" 
+                                BackgroundColor="#E91E63" 
+                                TextColor="White" 
+                                FontAttributes="Bold" 
+                                CornerRadius="10" 
+                                WidthRequest="90" 
+                                Command="{Binding VerHistorialCommand}" />
+                        
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
 
         <StackLayout VerticalOptions="FillAndExpand" Padding="20" Margin="0,120,0,0">
@@ -68,17 +71,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <Button Text="+"
-                    FontSize="24"
-                    BackgroundColor="#608BC1"
-                    TextColor="White"
-                    CornerRadius="30"
-                    WidthRequest="60"
-                    HeightRequest="60"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="EndAndExpand"
-                    Margin="10"
-                    Clicked="" />
+            
         </StackLayout>
     </Grid>
 </ContentPage>
