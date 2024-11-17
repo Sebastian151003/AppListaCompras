@@ -25,6 +25,7 @@
             HorizontalOptions="Center" Clicked="IniciarBtn_Clicked"/>
 
 
+
             <Button Text="Registrarse"
             x:Name="RegistrarBtn"
             FontSize="18"

@@ -18,6 +18,7 @@
         {
             await Navigation.PushAsync(new LoginView());
         }
+
     }
 
 }
