@@ -16,16 +16,16 @@
 
             <StackLayout Orientation="Vertical" Spacing="5">
                 <Label Text="Nombre:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su Nombre" FontSize="18" x:Uid="txtNombre" />
+                <Entry Placeholder="Ingrese su Nombre" FontSize="18" x:Uid="txtNombre" x:Name="txtNombre" />
 
                 <Label Text="Correo:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su Correo" FontSize="18" x:Uid="txtCorreo" />
+                <Entry Placeholder="Ingrese su Correo" FontSize="18" x:Uid="txtCorreo" x:Name="txtCorreo"/>
 
                 <Label Text="Contraseña:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su Contraseña" IsPassword="True" FontSize="18" x:Uid="txtContrasena" />
+                <Entry Placeholder="Ingrese su Contraseña" IsPassword="True" FontSize="18" x:Uid="txtContrasena" x:Name="txtContrasena"/>
 
                 <Label Text="Telefono:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su Telefono" FontSize="18" x:Uid="txtTelefono" />
+                <Entry Placeholder="Ingrese su Telefono" FontSize="18" x:Uid="txtTelefono" x:Name="txtTelefono"/>
 
             </StackLayout>
             </Frame>
@@ -38,7 +38,7 @@
                 CornerRadius="10"
                 WidthRequest="200"
                 HeightRequest="50"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center" Clicked="btnRegistro_Clicked"/>
 
     </StackLayout>
 

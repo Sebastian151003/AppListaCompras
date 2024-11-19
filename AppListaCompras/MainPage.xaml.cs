@@ -16,12 +16,12 @@
             await Navigation.PushAsync(new RegistroView());
         }
 
-        private async void btnIniciarSesion_Clicked(object sender, EventArgs e)
+
+        private async void BtnIniciar_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new LoginView());
+
         }
-
-
     }
 
 }

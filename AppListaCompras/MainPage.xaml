@@ -22,7 +22,7 @@
             CornerRadius="10"
             WidthRequest="200"
             HeightRequest="50"
-            HorizontalOptions="Center" Clicked="IniciarBtn_Clicked"/>
+            HorizontalOptions="Center" Clicked="BtnIniciar_Clicked" x:Name="BtnIniciar"/>
 
 
 
@@ -34,7 +34,7 @@
             CornerRadius="10"
             WidthRequest="200"
             HeightRequest="50"
-            HorizontalOptions="Center" Clicked="RegistrarBtn_Clicked"/>
+            HorizontalOptions="Center" Clicked="RegistroBtn_Clicked"/>
         </StackLayout>
     </ScrollView>
 
