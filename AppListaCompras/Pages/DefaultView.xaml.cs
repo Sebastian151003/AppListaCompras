@@ -5,5 +5,8 @@ public partial class DefaultView : ContentPage
 	public DefaultView()
 	{
 		InitializeComponent();
+
 	}
+
+    
 }

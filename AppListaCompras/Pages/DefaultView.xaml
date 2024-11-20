@@ -22,56 +22,33 @@
                                 FontAttributes="Bold" 
                                 CornerRadius="10" 
                                 WidthRequest="70" 
-                                Command="{Binding VerListasCommand}" />
+                                />
                         <Button Text="Artículos" 
                                 BackgroundColor="#E91E63" 
                                 TextColor="White" 
                                 FontAttributes="Bold" 
                                 CornerRadius="10" 
                                 WidthRequest="90" 
-                                Command="{Binding VerArticulosCommand}" />
+                                />
                         <Button Text="Categorías" 
                                 BackgroundColor="#E91E63" 
                                 TextColor="White" 
                                 FontAttributes="Bold" 
                                 CornerRadius="10" 
                                 WidthRequest="100" 
-                                Command="{Binding VerCategoriasCommand}" />
+                                 />
                         <Button Text="Historial" 
                                 BackgroundColor="#E91E63" 
                                 TextColor="White" 
                                 FontAttributes="Bold" 
                                 CornerRadius="10" 
                                 WidthRequest="90" 
-                                Command="{Binding VerHistorialCommand}" />
+                                 />
                         
                     </HorizontalStackLayout>
                 </StackLayout>
             </ScrollView>
         </StackLayout>
 
-        <StackLayout VerticalOptions="FillAndExpand" Padding="20" Margin="0,120,0,0">
-            <CollectionView ItemsSource="{Binding ListasCompras}" Margin="0,10,0,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True" Margin="0,10">
-                            <StackLayout Orientation="Vertical">
-                                <Label Text="{Binding NombreLista}" FontSize="18" FontAttributes="Bold" TextColor="#333333" />
-                                <Label Text="{Binding FechaCreacion, StringFormat='Creado el {0:dd/MM/yyyy}'}" 
-                                       FontSize="14" TextColor="#777777" />
-                                <Button Text="Ver Detalles" 
-                                        FontSize="14" 
-                                        BackgroundColor="#7E57C2" 
-                                        TextColor="White" 
-                                        CornerRadius="10" 
-                                        Command="{Binding VerDetallesCommand}" />
-                            </StackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
-            
-        </StackLayout>
     </Grid>
 </ContentPage>
