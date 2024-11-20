@@ -6,48 +6,48 @@
              BackgroundColor="#F2DFB5">
 
     <Grid Padding="0">
-        <StackLayout Spacing="0">
+        <StackLayout>
 
-            <ScrollView>
-                <StackLayout BackgroundColor="#B03052" Padding="10" Orientation="Vertical">
-                    <Label Text="Menú Principal" 
-                           FontSize="18" 
-                           FontAttributes="Bold" 
-                           TextColor="White" 
-                           HorizontalOptions="Start" />
-                    <HorizontalStackLayout Spacing="10" Padding="10">
-                        <Button Text="Listas" 
-                                BackgroundColor="#E91E63" 
-                                TextColor="White" 
-                                FontAttributes="Bold" 
-                                CornerRadius="10" 
-                                WidthRequest="70" 
-                                />
-                        <Button Text="Artículos" 
-                                BackgroundColor="#E91E63" 
-                                TextColor="White" 
-                                FontAttributes="Bold" 
-                                CornerRadius="10" 
-                                WidthRequest="90" 
-                                />
-                        <Button Text="Categorías" 
-                                BackgroundColor="#E91E63" 
-                                TextColor="White" 
-                                FontAttributes="Bold" 
-                                CornerRadius="10" 
-                                WidthRequest="100" 
-                                 />
-                        <Button Text="Historial" 
-                                BackgroundColor="#E91E63" 
-                                TextColor="White" 
-                                FontAttributes="Bold" 
-                                CornerRadius="10" 
-                                WidthRequest="90" 
-                                 />
-                        
+            <StackLayout>
+                <StackLayout BackgroundColor="#B03052" Padding="10">
+                    <Label Text="Gestión de Artículos" 
+           FontSize="20" 
+           FontAttributes="Bold" 
+           TextColor="White" 
+           HorizontalOptions="Center"
+           Margin="0,10,0,20"/>
+          <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+              <Button Text="Listas" 
+                BackgroundColor="#E91E63" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                CornerRadius="10" 
+                WidthRequest="70" 
+                />
+              <Button Text="Artículos" 
+                BackgroundColor="#E91E63" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                CornerRadius="10" 
+                WidthRequest="90" 
+                Clicked="BtnArticulos_Clicked"/>
+              <Button Text="Categorías" 
+                BackgroundColor="#E91E63" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                CornerRadius="10" 
+                WidthRequest="100" 
+                />
+              <Button Text="Historial" 
+                BackgroundColor="#E91E63" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                CornerRadius="10" 
+                WidthRequest="90" 
+                />
                     </HorizontalStackLayout>
                 </StackLayout>
-            </ScrollView>
+            </StackLayout>
         </StackLayout>
 
     </Grid>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.Pages.ArticulosView"
+             Title="ArticulosView"
+             BackgroundColor="#F2DFB5">
+
+    <Grid Padding="0">
+        <StackLayout Spacing="10">
+            <StackLayout BackgroundColor="#B03052" Padding="15">
+                <Label Text="Gestión de Artículos" 
+                       FontSize="22" 
+                       FontAttributes="Bold" 
+                       TextColor="White" 
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,20" />
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Button Text="Listas" 
+                            BackgroundColor="#E91E63" 
+                            TextColor="White" 
+                            FontAttributes="Bold" 
+                            CornerRadius="10" 
+                            WidthRequest="70" />
+                    <Button Text="Artículos" 
+                            BackgroundColor="#E91E63" 
+                            TextColor="White" 
+                            FontAttributes="Bold" 
+                            CornerRadius="10" 
+                            WidthRequest="90" />
+                    <Button Text="Categorías" 
+                            BackgroundColor="#E91E63" 
+                            TextColor="White" 
+                            FontAttributes="Bold" 
+                            CornerRadius="10" 
+                            WidthRequest="100" />
+                    <Button Text="Historial" 
+                            BackgroundColor="#E91E63" 
+                            TextColor="White" 
+                            FontAttributes="Bold" 
+                            CornerRadius="10" 
+                            WidthRequest="90" />
+                </HorizontalStackLayout>
+            </StackLayout>
+
+            <HorizontalStackLayout BackgroundColor="White" Padding="10"  Margin="10,0">
+                <Entry Placeholder="Buscar artículos..."
+                       TextColor="#333333"
+                       HorizontalOptions="FillAndExpand" 
+                       FontSize="14" 
+                       BackgroundColor="Transparent" />
+                <Image Source="search_icon.png"
+                       WidthRequest="24"
+                       HeightRequest="24"
+                       VerticalOptions="Center" />
+            </HorizontalStackLayout>
+        </StackLayout>
+
+        <CollectionView Margin="0,20,0,70">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="10" Margin="5" BackgroundColor="White" CornerRadius="10" HasShadow="True">
+                        <Grid ColumnDefinitions="*, Auto, Auto" RowDefinitions="Auto">
+                            <Label Text="" 
+                                   FontSize="16" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#333333" 
+                                   Grid.Column="0" />
+                            <Label Text="" 
+                                   FontSize="14" 
+                                   TextColor="#777777" 
+                                   Grid.Column="0"
+                                   Grid.Row="1" />
+                            <Button Text="Editar" 
+                                    BackgroundColor="#FF9800"
+                                    TextColor="White"
+                                    CornerRadius="10"
+                                    FontSize="12"
+                                    Grid.Column="1" />
+                            <Button Text="Eliminar" 
+                                    BackgroundColor="#F44336"
+                                    TextColor="White"
+                                    CornerRadius="10"
+                                    FontSize="12"
+                                    Grid.Column="2" />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid VerticalOptions="End" HorizontalOptions="End" Margin="10">
+            <Button Text="+" 
+                    FontSize="24" 
+                    BackgroundColor="#608BC1" 
+                    TextColor="White" 
+                    CornerRadius="30" 
+                    WidthRequest="60" 
+                    HeightRequest="60" 
+                    Margin="10,0,0,0" 
+                    />
+
+        </Grid>
+
+        <Grid VerticalOptions="End" HorizontalOptions="End" Margin="10">
+
+            <Button Text="🗑" 
+                    FontSize="18" 
+                    BackgroundColor="#B8001F" 
+                    TextColor="White" 
+                    CornerRadius="30" 
+                    WidthRequest="60" 
+                    HeightRequest="60" 
+                    Margin="10,0,0,90" 
+                    />
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
