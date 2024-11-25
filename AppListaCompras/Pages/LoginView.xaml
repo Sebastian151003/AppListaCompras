@@ -13,10 +13,10 @@
             <StackLayout Spacing="10">
 
                 <Label Text="Nombre de Usuario:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su usuario" FontSize="18" x:Name="txtUsuario" />
+                <Entry Placeholder="Ingrese su usuario" FontSize="18" x:Name="txtUsuario" TextColor="Black"/>
 
                 <Label Text="Contraseña:" FontSize="18" TextColor="#333333" />
-                <Entry Placeholder="Ingrese su contraseña" FontSize="18" IsPassword="True" x:Name="txtContrasena" />
+                <Entry Placeholder="Ingrese su contraseña" FontSize="18" IsPassword="True" x:Name="txtContrasena" TextColor="Black" />
 
                 <Button Text="Aceptar"
                         FontSize="18"
