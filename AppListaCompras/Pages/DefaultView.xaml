@@ -23,7 +23,7 @@
                 FontAttributes="Bold" 
                 CornerRadius="10" 
                 WidthRequest="70" 
-                />
+                Clicked="BtnListas_Clicked"/>
               <Button Text="Artículos" 
                 BackgroundColor="#E91E63" 
                 TextColor="White" 
@@ -37,7 +37,7 @@
                 FontAttributes="Bold" 
                 CornerRadius="10" 
                 WidthRequest="100" 
-                />
+                Clicked="BtnCategorias_Clicked"/>
               <Button Text="Historial" 
                 BackgroundColor="#E91E63" 
                 TextColor="White" 

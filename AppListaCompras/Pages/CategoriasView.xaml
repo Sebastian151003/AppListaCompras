@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.Pages.CategoriasView"
+             Title="CategoriasView"
+             BackgroundColor="#F2DFB5">
+
+
+    <Grid Padding="0">
+        <StackLayout>
+
+            <StackLayout>
+                <StackLayout BackgroundColor="#B03052" Padding="10">
+                    <Label Text="Gestión de Categorías" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       TextColor="White" 
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,20"/>
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Button Text="Listas" 
+                        BackgroundColor="#E91E63" 
+                        TextColor="White" 
+                        FontAttributes="Bold" 
+                        CornerRadius="10" 
+                        WidthRequest="70" 
+                        />
+                        <Button Text="Artículos" 
+                        BackgroundColor="#E91E63" 
+                        TextColor="White" 
+                        FontAttributes="Bold" 
+                        CornerRadius="10" 
+                        WidthRequest="90" 
+                        />
+                        <Button Text="Categorías" 
+                        BackgroundColor="#E91E63" 
+                        TextColor="White" 
+                        FontAttributes="Bold" 
+                        CornerRadius="10" 
+                        WidthRequest="100" 
+                        />
+                        <Button Text="Historial" 
+                        BackgroundColor="#E91E63" 
+                        TextColor="White" 
+                        FontAttributes="Bold" 
+                        CornerRadius="10" 
+                        WidthRequest="90" 
+                        />
+                    </HorizontalStackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
