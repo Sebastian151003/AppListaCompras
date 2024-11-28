@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaCompras.Pages.RegistroArticuloView"
+             Title="RegistroArticuloView"
+             BackgroundColor="#F2DFB5">
+
+
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="15" Padding="20">
+
+
+
+        <Frame Padding="50" CornerRadius="20" HasShadow="True" BackgroundColor="Beige">
+            <StackLayout Orientation="Vertical" Spacing="15">
+
+                <Label Text="Nombre del Artículo:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese el nombre del artículo" FontSize="18" TextColor="Black" />
+
+                <Label Text="Cantidad:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese la cantidad" FontSize="18" Keyboard="Numeric"  TextColor="Black"/>
+
+                <Label Text="Unidad:" FontSize="18" TextColor="#333333" />
+                <Picker Title="Seleccione una unidad (Kg, Litros, etc...)"
+                    FontSize="18"
+                    TextColor="Black"
+                    ItemsSource="{Binding Unidades}"
+                     ItemDisplayBinding="{Binding NombreUnidad}"/> 
+
+                <Label Text="Estado del artículo:" FontSize="18" TextColor="#333333" />
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <RadioButton Content="Comprado" GroupName="Estado" Value="true" FontSize="18"  TextColor="Black"/>
+                    <RadioButton Content="Pendiente" GroupName="Estado" Value="false" FontSize="18"   TextColor="Black"/>
+                </StackLayout>
+
+                <Label Text="Categoría:" FontSize="18" TextColor="#333333" />
+                <Picker Title="Seleccione una categoría"
+                    FontSize="18"
+                    TextColor="#333333"
+                    ItemsSource="{Binding Categorias}" 
+                    ItemDisplayBinding="{Binding NombreCategoria}" />
+
+                <Label Text="Seleccione una Imagen:" FontSize="18" TextColor="#333333" />
+                <Entry Placeholder="Ingrese la imagen" FontSize="18" TextColor="Black" />
+                
+
+
+            </StackLayout>
+        </Frame>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button Text="Cancelar"
+              FontSize="18"
+              BackgroundColor="#B8001F"
+              TextColor="White"
+              CornerRadius="10"
+              WidthRequest="150"
+              HeightRequest="50" />
+
+            <Button Text="Agregar"
+               FontSize="18"
+               BackgroundColor="#024CAA"
+               TextColor="White"
+               CornerRadius="10"
+               WidthRequest="150"
+               HeightRequest="50" />
+        </HorizontalStackLayout>
+
+
+
+    </StackLayout>
+</ContentPage>  

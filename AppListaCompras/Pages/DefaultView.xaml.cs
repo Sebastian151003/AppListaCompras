@@ -22,4 +22,9 @@ public partial class DefaultView : ContentPage
     {
         await Navigation.PushAsync(new ListasView());
     }
+
+    private async void BtnRegistroCat_Cliked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RegistroCategoriaView());
+    }
 }

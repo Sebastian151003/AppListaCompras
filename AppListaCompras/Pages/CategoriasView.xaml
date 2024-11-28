@@ -18,12 +18,23 @@
                        HorizontalOptions="Center"
                        Margin="0,10,0,20"/>
                     <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                        <Button Text="Inicio" 
+                        BackgroundColor="#E91E63" 
+                        TextColor="White" 
+                        FontAttributes="Bold" 
+                        CornerRadius="10" 
+                        WidthRequest="100"
+                        Clicked="BtnInicio_Clicked"
+                        />
+                        
+                        
                         <Button Text="Listas" 
                         BackgroundColor="#E91E63" 
                         TextColor="White" 
                         FontAttributes="Bold" 
                         CornerRadius="10" 
-                        WidthRequest="70" 
+                        WidthRequest="70"
+                        Clicked="BtnLista_Clicked"
                         />
                         <Button Text="Artículos" 
                         BackgroundColor="#E91E63" 
@@ -31,14 +42,9 @@
                         FontAttributes="Bold" 
                         CornerRadius="10" 
                         WidthRequest="90" 
+                        Clicked="BtnArticulo_Clicked"
                         />
-                        <Button Text="Categorías" 
-                        BackgroundColor="#E91E63" 
-                        TextColor="White" 
-                        FontAttributes="Bold" 
-                        CornerRadius="10" 
-                        WidthRequest="100" 
-                        />
+                        
                         <Button Text="Historial" 
                         BackgroundColor="#E91E63" 
                         TextColor="White" 

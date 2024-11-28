@@ -10,7 +10,7 @@
 
             <StackLayout>
                 <StackLayout BackgroundColor="#B03052" Padding="10">
-                    <Label Text="Gestión de Artículos" 
+                    <Label Text="Bienvenidos" 
            FontSize="20" 
            FontAttributes="Bold" 
            TextColor="White" 
@@ -43,7 +43,8 @@
                 TextColor="White" 
                 FontAttributes="Bold" 
                 CornerRadius="10" 
-                WidthRequest="90" 
+                WidthRequest="90"
+                Clicked="BtnRegistroCat_Cliked"
                 />
                     </HorizontalStackLayout>
                 </StackLayout>
